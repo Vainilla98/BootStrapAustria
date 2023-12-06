@@ -1,0 +1,40 @@
+img {
+    width: 97%;
+    border-radius:10%;
+}
+.padre{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+    "pisa eiffel stone stone"
+    "pisa libertad lisboa sovietico"
+    "italia libertad brandemburgo sovietico";
+}
+.padre > div {
+    align-self: center;
+}
+.pisa  {
+    grid-area: pisa;
+}
+.brandemburgo {
+    grid-area: brandemburgo;
+}
+.italia {
+    grid-area: italia;
+}
+.libertad {
+    grid-area: libertad;
+}
+.eiffel {
+    grid-area: eiffel;
+}
+.stone {
+    grid-area: stone;
+}
+.lisboa {
+    grid-area: lisboa;
+}
+.sovietico {
+    grid-area: sovietico;
+}

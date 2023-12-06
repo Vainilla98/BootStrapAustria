@@ -1,0 +1,13 @@
+div[class="portfolio-item-caption-content text-center text-white"]{
+    display: flex;
+    align-items: center;
+}
+.Panoramica{
+    width: 100%;
+    animation: fadeInUp; 
+    animation-duration: 2s;
+    --animate-delay: 5s;
+}
+.Rojo{
+    color: rgb(179, 42, 42);
+}

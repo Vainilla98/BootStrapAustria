@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/3cc3bec961.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Práctica</title>
+<body>
+  <div class="d-flex flex-wrap align-items-end text-bg-dark text-end">
+      <img src="logo.png" class="bi me-2 rounded" style="width:80%;" alt="Logotipo">
+      <img src="logo2.png" class="bi me-2 rounded" style="width:15%;" alt="Logotipo">
+      <div class="row text-start" style="width:80%;">
+        <p class="fs-3 col-9 rounded px-lg-3 texto animate__animated animate__backInLeft">Antonio Moncayo Hernández</p>
+        <span class="fs-3 col rounded px-lg-3 texto animate__animated animate__backInRight" style="color: orange;">1ºDAM - LMSGI</span>
+      </div>
+  </div>
+  <!-- Sticky barra -->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-brand">MENU</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link bajada active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link bajada dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-cog"></i> Componentes</a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn">
+                <li><a class="dropdown-item" href="#myCarousel">Carrusel</a></li>
+                <li><a class="dropdown-item" href="#Marketing">Pop Up</a></li>
+                <li><a class="dropdown-item" href="#Cartas">Cards (fondo trasparente)</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link bajada dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-cog"></i> Componentes Añadidos</a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn">
+                <li><a class="dropdown-item" href="#Marketing">Disposición Empresa</a></li>
+                <li><a class="dropdown-item" href="#Boton_mas">Expandir texto</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link bajada dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-school-flag"></i> Educación</a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn">
+                <li><a class="dropdown-item" target="_blank" href="https://somosdelprieto.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Somos del Prieto</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://educamosclm.castillalamancha.es/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Educamos CLM</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link bajada dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-regular fa-file-code"></i> Prácticas</a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn">
+                <li><a class="dropdown-item" href="PracticaGridImagenes/index.html" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket"></i> Práctica GRID con Imágenes</a></li>
+                <li><hr class="dropdown-divider"><p class="fw-semibold text-center">Práctica Plantilla Bootstrap</p> </li>
+                <li><a class="dropdown-item" href="PracticaPlantilla/index.html" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket"></i> Visita Viena</a></li>
+              </ul>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <!--Carrusel-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="carrusel/cuadro5.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <div class="fondo">
+                <h1>Batalla de Austerlitz.</h1>
+                <p>Dentro de las grandes guerras Napoleónicas </p>
+              </div>
+              <p><a class="btn btn-lg btn-primary" target="_blank" href="https://es.wikipedia.org/wiki/Batalla_de_Austerlitz">Mas información</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carrusel/cuadro3.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <div class="fondo">
+                <h1>Primavera de los Pueblos.</h1>
+                <p>Se llevaron a cabo ciertas reformas, obligados por la presión revolucionaria.</p>
+              </div>
+              <p><a class="btn btn-lg btn-primary" href="#Revoluciones48">Mas información</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carrusel/cuadro4.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <div class="fondo">
+                <h1>Compromiso Austro-Húngaro.</h1>
+                <p>Donde surgió la monarquía dual</p>
+              </div>
+              <p><a class="btn btn-lg btn-primary" href="#compromiso">Mas información</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carrusel/minorias.jpeg" class="bi me-2 rounded"   alt="Logotipo">
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <div class="fondo">
+                <h1>Minorías del Imperio</h1>
+                <p>Italianos, Húngaros, Alemanes, Polacos, Rumanos, Checos, ...</p>
+              </div>
+              <p><a class="btn btn-lg btn-primary" href="#Cartas">Mas información</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carrusel/sarajevo.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <div class="fondo">
+                <h1>Asesinato del Archiduque.</h1>
+                <p>Asesinato que conmocionó a Europa, condenándola a 4 sangrientos años en el barro</p>
+              </div>
+              <p><a class="btn btn-lg btn-primary" href="#Guerra">Mas información</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="masthead-heading mb-0 text-center w-100 titulo">AUSTRIA-HUNGRÍA <br> Historia</h1>
+    
+    <!--Marketing Disposición-->
+    <div class="container marketing" id="Marketing">
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"> La Monarquía Dual <i class="fa-solid fa-crown"></i><br><span class="text-muted fs-3">El compromiso</span></h2>
+          <p class="lead">El acuerdo surgió tras una serie de derrotas austríacas: contra Cerdeña en 1859 y Prusia e Italia en 1866 (guerra austro-prusiana). Para fortalecer el debilitado imperio y ante las exigencias húngaras que reclamaban una mayor participación en los asuntos de Estado, Francisco José I tuvo una serie de reuniones con miembros de la nobleza de este país que tendrían como resultado la creación de un estado federal dual, donde Hungría sería un Reino que administraría el territorio histórico de la 
+            <a data-bs-toggle="modal" data-bs-target="#modal" class="link-primary puntero">Corona de San Esteban </a><i class="fa-solid fa-feather"></i> de forma autónoma.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="comercial/comercial1.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <span class="text-muted">1. Coronación de Francisco Jose I como rey de Hungría</span>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette" id="Revoluciones48">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Revoluciones de 1848 <i class="fa-solid fa-hand-fist"></i><br><span class="text-muted fs-3">Primavera de los Pueblos</span></h2>
+          <p class="lead">Hungría se alzó nuevamente durante la revolución en los Estados alemanes en 1848, surgiendo la llamada Revolución húngara de 1848, en la cual se enalteció el nacionalismo y la independencia de los Estados europeos y el rechazo al poder austríaco de los Habsburgo. De esta forma, el 15 de marzo de 1848 las calles de Buda se llenaron de gente, poetas e intelectuales, políticos y militares que protestaban contra el emperador austríaco Francisco José I. Las revueltas húngaras fueron sofocadas gracias a la intervención del zar ruso, quien acudió en ayuda del emperador austríaco, poniendo nuevamente a la nación húngara bajo el dominio Habsburgo. El fracaso de la revolución desencadenó una serie de ejecuciones de generales y dignatarios húngaros que se habían sublevado contra los austríacos. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="comercial/comercial2.jpg" class="bi me-2 rounded"   alt="Logotipo">
+          <span class="text-muted">2. Ejecución de los mártires de Arad</span>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette" id="Boton_mas">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Política Exterior <i class="fa-solid fa-handshake"></i><br><span class="text-muted fs-3">La Triple Alianza & la Liga de los tres Emperadores</span></h2>
+          <p class="lead">La asociación entre la Alemania de Bismarck y el Imperio austrohúngaro fue el primer paso en el proceso de alianzas europeas que, junto con las luchas nacionalistas de los pueblos del Danubio y los Balcanes, apilaría explosivos sobre el polvorín étnico y político que incendiaría Europa en la Primera Guerra Mundial. Efectivamente, el Congreso de Berlín otorgó la administración de Bosnia-Herzegovina a Austria-Hungría. La invasión (1878) y posterior ocupación (1879) del territorio colocó al imperio en una difícil situación frente al amenazante paneslavismo de Serbia y Rusia, naciones que se sintieron engañadas y frustradas por este Congreso.</p>
+          <p class="lead">En 1879, el imperio se unió a Alemania en una alianza que luego incluyó también a Italia, llamada la Triple Alianza. Entretanto, la Liga de los Tres Emperadores (Rusia, Alemania y Austria-Hungría) fue revocada, lo que condujo al acuerdo contra natura entre la autocrática y reaccionaria Rusia y la republicana Francia (Doble Alianza del 17 de agosto de 1894).</p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse"  data-bs-target="#ExpandirTexto" aria-expanded="false" aria-controls="ExpandirTexto">
+            Mas información
+          </button>
+        </div>
+        <div class="col-md-5">
+          <img src="comercial/comercial3.jpg" class="bi me-2 rounded" alt="Logotipo">
+          <span class="text-muted">3. Postal de la vieja triple alianza.</span>
+        </div>
+      </div>
+      <br>
+        <div class="collapse" id="ExpandirTexto">
+          <div class="card card-body">
+            <div class="row"> 
+              <div class="col-md-6 order-md-2">
+                <p>En 1896 comenzó una rebelión en Creta y el 21 de julio de 1897 el ejército griego desembarcó en Creta para liberar la isla del Imperio otomano e incorporarla a Grecia. Durante esta crisis intervinieron las potencias europeas, incluida Austria-Hungría, y proclamaron en Creta un protectorado internacional.</p>
+                <p>En 1889 la monarquía sufrió un duro golpe, cuando el hijo del emperador Francisco José, el príncipe heredero Rodolfo de Habsburgo se suicidó. Entonces la sucesión del trono pasó a manos del hijo mayor de Carlos Luis, hermano del emperador, este era el archiduque Francisco Fernando. Durante la época en que fue sucesor al trono, Francisco Fernando se mostró partidario de la reforma del Estado para convertirlo casi en una federación.6​ Temía que la dinastía no sobreviviera si no se realizaban urgentes reformas, tanto políticas como militares, y estaba convencido de la incapacidad de que el imperio sobreviviera a una guerra mundial si se desencadenaba antes que él hubiese accedido al trono y llevado a cabo las reformas, una de sus propuestas era los Estados Unidos de la Gran Austria. Sin embargo sus ideas chocaban con el pensamiento conservador del emperador.</p>
+              </div>
+              <div class="col-md-6 order-md-1"><img src="comercial/comercial4.jpg" class="bi me-2 rounded"   alt="Logotipo"></div>
+            </div>
+          </div>
+        </div><!-- /.container -->
+      </div>
+      <hr class="featurette-divider">
+
+    <!--Elemento Modal (ventana Flotando)-->
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Corona de San Esteban</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body align">
+            La Santa Corona húngara, conocida también como corona de San Esteban o Sacra Corona húngara, perteneció al primer monarca de Hungría, Esteban I, y es la única en la actualidad calificada como un «atributo sacro». En el 2000 fue trasladada del Parlamento al Museo Nacional de Hungría.
+            <img src="SanEsteban.jpg" alt="Corona de San Esteban" class="col d-flex justify-content-center" style="width:70%; margin: 10px auto 10px auto;"  >
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" href="https://es.wikipedia.org/wiki/Corona_de_san_Esteban">Wikipedia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="masthead-heading mb-0 text-center w-100 titulo">Pueblos dentro del Imperio</h1>
+    <!--Card-->
+
+    <div class="accordion" id="Expandir" style="padding-bottom: 2%;">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Mapa Completo
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-bg-dark text-center">
+            <img src="Minorias/mapa.png" style="width: 70%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="row text-bg-dark" style="width: 100%;" id="Cartas">
+      <div class="row" style="padding-top: 40px ;"></div>
+      <div class="col-1"></div>
+      <div class="col-10">
+        <div class="card text-bg-dark">
+          <img src="mapaImperial.jpg" class="card-img img-fluid" alt="Minorías en el Imperio" >
+          <div class="card-img-overlay container text-center overflow-hidden"> <!--Inicio Cartas-->
+            <div class="row">
+              <h2 class="card-title col-12 titulo">Ubicación</h2>
+            </div>
+            <div class="row" style="height:3% ;"></div> 
+            <div class="row align-items-center">
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 90%;">
+                  <img src="Minorias/Alemanes.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Los Austriacos, representaban el mayor grupo étnico en el imperio. El 23% de la población era de origen germánico.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 90%;">
+                  <img src="Minorias/Checos.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Grupo nor-eslavo. El 3º pueblo mas numeroso, con el 19% de hablantes. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 100%;">
+                  <img src="Minorias/Polacos.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Eslavos Orientales. Actualmente son parte de Polonia y Ucrania.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="height:5% ;"></div> 
+            <div class="row align-items-center" >
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 90%;">
+                  <img src="Minorias/Rumanos.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Ubicados en la region de Transilvania. Representaban el 6% de la población.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 90%;">
+                  <img src="Minorias/Hungaros.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Tal y como vimos arriba, los húngaros son el 2º grupo étnico mas numeroso. El 20% de la población hablaba Húngaro.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-transparent" style="width: 90%;">
+                  <img src="Minorias/Eslavos.png" style="width: 100%;" class="card-img-top img-fluid" alt="Minorías en el imperio">
+                  <div class="card-body fondo">
+                    <p class="card-text text-white">Todas las grandes poblaciones eslavas en el sur, formaban en total 12% de la población, siendo el 4º en numero.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+      <div class="row" style="padding-bottom: 40px ;"></div>
+    </div>  
+    <!--Austria-Hungría - Texto de Relleno -->
+    <div class="container" id="Guerra">
+        <h1 class="masthead-heading mb-0 text-center w-100 titulo" style="padding-bottom: 1%;">AUSTRIA-HUNGRÍA <br> La Gran Guerra <i class="fa-solid fa-bomb"></i></h1>
+        <p>El 28 de julio de 1914, el Imperio austrohúngaro declaró la guerra al reino de Serbia , acto que sumió a Europa, debido al sistema de alianzas imperante, en la «tercera parte de las guerras balcánicas»,  que pronto se transformó en la Primera Guerra Mundial. El imperio tuvo que combatir en varios frentes simultáneamente, para lo que no contaba con medios económicos militares suficientes, por lo que la contienda pronto se tornó insostenible. El auxilio del Imperio alemán se volvió pronto tutela del Estado de los Habsburgo, que se fue acentuando con la prolongación del conflicto y privó a este de toda posibilidad de poner fin a la guerra sin el beneplácito del Gobierno de Berlín, pese al agotamiento paulatino de los austrohúngaros</p>
+        <h2 class="titulo" style="font-weight: 500;">2 EL PROBLEMA DE LOS ESLAVOS DEL SUR VISTO POR EL IMPERIO</h2>
+        <p>El reino de Serbia, Estado eslavo enclavado en los Balcanes, suponía para los mandatarios del Imperio austrohúngaro el principal problema: era una amenaza para la estabilidad interna del imperio y un obstáculo a los planes de expansión en la península balcánica. Una sala de recepciones del Ministerio de la Guerra en Belgrado contenía una alegoría de la nación serbia con los territorios que el Estado serbio deseaba obtener: la Voivodina, Dalmacia y Bosnia-Herzegovina, todos ellos parte del Imperio austrohúngaro a principios del siglo XX. Además, tanto Serbia como Montenegro deseaban aprovechar la decadencia del Imperio otomano y rechazaban la situación territorial de la península vigente a comienzos del siglo.</p>
+        <h3 class="titulo" style="font-weight: 200;">2.1	Reino de Serbia</h3>
+        <img src="Periodico.jpeg" alt="Periódico declaración guerra" class="img-fluid periodico float-end">
+        <p> En efecto, desde el surgimiento del reino, algunos políticos serbios, con el respaldo de gran parte de la población, se empeñaron en obtener los territorios mencionados por la alegoría del ministerio y crear así un Estado que englobase a toda la población considerada serbia; pese a esto, el Principado de Serbia, aún dependiente teóricamente del Imperio otomano, firmó un acuerdo de colaboración con el austrohúngaro que marcó el comienzo de una alianza que entró en crisis a partir de 1903. Desde 1905-1906, el reino serbio, con el sostenimiento —principalmente financiero— de Francia, se fue sacudiendo la tutela austrohúngara. La crisis bosnia de 1908, que concluyó con la anexión austrohúngara de Bosnia-Herzegovina, estropeó las buenas relaciones del imperio con Rusia. Aislado diplomáticamente, el imperio se volvió cada vez más dependiente de su único aliado, Alemania.</p>
+        <h3 class="titulo" style="font-weight: 200;">2.2	Eslavos en el Imperio</h3>
+        <p>Por añadidura, en la población eslava de los territorios meridionales del Imperio austrohúngaro surgió una cierta simpatía por el reino vecino, que fue acentuándose con el tiempo; los partidarios de una reforma administrativa para repartir el territorio imperial en tres unidades —una de ellas eslava—, método que se creía podía permitir conservar el imperio frente al nacionalismo eslavo, quedaron pronto superados en número por los que preferían instaurar un Estado yugoslavo independiente de la influencia austriaca, entre los que se contaban los eslovenos y los croatas. La oposición de los mandatarios cisleitanos y transleitanos a aceptar una reforma administrativa que diese autonomía de una manera u otra a los eslavos y a cambiar la estructura administrativa dual hizo que, en la crisis de julio de 1914, optasen por la guerra como medio para tratar de aplastar a Serbia y, con ella, a los nacionalismos yugoslavos. El escoger el conflicto con el reino vecino fue también reflejo de la tendencia al autoritarismo ante cualquier amenaza que caracterizaba a la sazón a los Gobiernos de las dos mitades del imperio.</p>
+        <h2 class="titulo" style="font-weight: 500;">3 OBJETIVOS BÉLICOS IMPERIALES <i class="fa-solid fa-chess"></i></h2>
+        <p>El imperio, fiel aliado del Imperio alemán desde la liga de ambos en 1879, desempeñó un complejo papel en la guerra, ya que tanto los enemigos como los aliados ansiaban apoderarse de parte de su territorio. Por su parte, y como todos los demás países beligerantes, el imperio esperaba obtener ventajas económicas en caso de que el resultado de la guerra fuese favorable.</p>
+
+    </div>
+  </main>
+  
+  <footer class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-3 mb-0 text-muted">Por Antonio Moncayo, <i class="fa-solid fa-stamp"></i><br> 1º DAM 2022</p>
+  
+      <samp class="col-md-3 d-flex text-muted">Gracias por su tiempo</samp>
+  
+      <ul class="nav col-md-6 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li class="nav-item"><a href="#myCarousel" class="nav-link px-2 text-muted"><i class="fa-solid fa-cog"></i> Introducción</a></li>
+        <li class="nav-item"><a href="#Marketing" class="nav-link px-2 text-muted"><i class="fa-solid fa-landmark-dome"></i> Historia</a></li>
+        <li class="nav-item"><a href="#Cartas" class="nav-link px-2 text-muted"><i class="fa-solid fa-users-rectangle"></i> Pueblos</a></li>
+      </ul>
+    </footer>
+  </footer>
+</body>
+</html>
